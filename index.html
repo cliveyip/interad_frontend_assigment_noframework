@@ -33,7 +33,7 @@
         </h4>
       </div>
       <div class="row form">
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <div class="row">
             <div class="form-group">
               <label>
@@ -46,51 +46,56 @@
               <div class="row">
                 <label>Interad Cashback<sup>&reg;</sup> credit card number</label>
               </div>
-              <div class="col-sm-3 col-md-3 col-xs-3 credit-card-input">
+              <div class="col-md-3 col-sm-3 col-xs-3 credit-card-input">
                 <input type="text" class="form-control" placeholder="XXXX" autoComplete="off" maxLength="4" />
               </div>
-              <div class="col-sm-3 col-md-3 col-xs-3 credit-card-input">
+              <div class="col-md-3 col-sm-3 col-xs-3 credit-card-input">
                 <input type="text" class="form-control" placeholder="XXXX" autoComplete="off" maxLength="4" />
               </div>
-              <div class="col-sm-3 col-md-3 col-xs-3 credit-card-input">
+              <div class="col-md-3 col-sm-3 col-xs-3 credit-card-input">
                 <input type="text" class="form-control" placeholder="XXXX" autoComplete="off" maxLength="4" />
               </div>
-              <div class="col-sm-3 col-md-3 col-xs-3 credit-card-input">
+              <div class="col-md-3 col-sm-3 col-xs-3 credit-card-input">
                 <input type="text" class="form-control" placeholder="XXXX" autoComplete="off" maxLength="4" />
               </div>
-
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <div class="row">
             <div class="form-group">
               <label>Email</label>
               <input type="email" class="form-control" placeholder="Email">
             </div>
             <div class="form-group">
-              <label>*Daytime Phone Number</label>
-              <input type="tel" class="form-control" placeholder="Phone Number">
+              <label id="phone-validation-label">*Daytime Phone Number</label>
+              <input type="tel" class="form-control" id="phone-validation-input" placeholder="Phone Number">
+              <p>
+                <img src="images/error_icn.png" id="phone-validation-img" width="15px"></img>
+                <span id="phone-validation-helptext"> Missing Information </span>
+              </p>
             </div>
           </div>
         </div>
         <div class = "row why-deserve-money">
-          <label>Why do you deserve this money?</label>
-          <textarea class="form-control" rows="5"></textarea>
+          <div class="form-group">
+            <label>Why do you deserve this money?</label>
+            <textarea class="form-control" rows="5"></textarea>
+          </div>
         </div>
         <hr />
 
         <div class = "row business-card">
           <div class="checkbox">
             <label>
-              <input type="checkbox" value="">
+              <input type="checkbox" value="" id="business-card-checkbox">
                 I am registering an Interad<sup>&reg;</sup> Business Card
               </input>
             </label>
           </div>
-          <div class="collapsible-panel">
+          <div id="business-card-div">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-6 col-sm-6">
                 <label>
                   <span> Business Name </span>
                   <span><i>as it appears on the credit card</i></span>
@@ -152,5 +157,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
   </body>
 </html>
